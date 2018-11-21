@@ -13,6 +13,7 @@ LABEL "com.github.actions.color"="gray-dark"
 # install calibre dependencies
 RUN apt-get update && \
     apt-get install -y calibre && \
+    apt-get install -y jq && \
     apt-get clean && \
     rm -rf /var/cache/apt/* /var/lib/apt/lists/*
 
