@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# set -eu
+set -eu
 
 cd "${GITHUB_WORKSPACE}/${GITBOOK_FOLDER:-.}"
 
