@@ -9,10 +9,7 @@ GITBOOK_FILE_PATH="${GITBOOK_FOLDER:-.}/${GITBOOK_PDF_NAME}"
 
 HAS_PDF_COMMIT=$(cat "${GITHUB_EVENT_PATH}" | jq .commits[0].added[0] | tr -d '"')
 
-if [ "${HAS_PDF_COMMIT}" == "${GITBOOK_FILE_PATH}" ]; then
-  echo "==> skipping…"
-  exit 0;
-fi
+[ "${HAS_PDF_COMMIT}" == "${GITBOOK_FILE_PATH}" ] && echo "==> skipping…" && exit 0;
 
 gitbook install
 
