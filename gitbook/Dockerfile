@@ -22,7 +22,5 @@ RUN npm install gitbook-cli -g
 # install gitbook version
 RUN gitbook fetch 3.2.3
 
-COPY book/ /book/
-
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
