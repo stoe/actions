@@ -28,14 +28,7 @@ GIT_EMAIL=$(cat "${GITHUB_EVENT_PATH}" | jq .pusher.email | tr -d '"')
 git config user.name "${GIT_NAME}"
 git config user.email "${GIT_EMAIL}"
 
-git status	# debug
+git add "${GITBOOK_PDF_NAME}"
+git commit -m "Add ${GITBOOK_PDF_NAME}"
 
-# git add "${GITBOOK_PDF_NAME}"
-#
-# git status	# debug
-#
-# git commit -m "Add ${GITBOOK_PDF_NAME}"
-#
-# git status	# debug
-#
-# # git push
+git push
