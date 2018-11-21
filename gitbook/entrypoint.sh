@@ -9,4 +9,6 @@ cd "${GITHUB_WORKSPACE}/${GITBOOK_FOLDER:-.}"
 
 cd ..
 
-git --version
+git status
+git add "${GITHUB_WORKSPACE}/${GITBOOK_FOLDER:-.}*.pdf"
+git status
