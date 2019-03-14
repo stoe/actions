@@ -2,12 +2,19 @@
 This is a collection of [GitHub Actions](https://github.com/features/actions) ideas that might be useful.
 
 
-## [Ansible Lint](./ansible-lint/)
-![](./ansible-lint/screenshot.png)
+## Ansible Lint
+![](./screenshots/ansible-lint.png)
+
+**_Ansible Lint for GitHub Action_ has been adopted by the [Ansible-lint project](https://github.com/ansible/ansible-lint).**
+:octopus::cat::sparkling_heart:
+
+The repository to find this action is: https://github.com/ansible/ansible-lint-action
+
+You can also find it on the GitHub Marketplace: https://github.com/marketplace/actions/ansible-lint
 
 
 ## [Ansible Playbook](./ansible-playbook/)
-![](./ansible-playbook/screenshot.png)
+![](./screenshots/ansible-playbook.png)
 
 
 ## License
